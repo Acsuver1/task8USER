@@ -1,6 +1,5 @@
-
-
 import React from 'react';
+import { SubmitHandler } from 'react-hook-form'; // Import SubmitHandler
 import { useLoginMutation } from '../../api/authApi';
 import { useNotification } from '../../hooks/useNotification';
 import AuthForm from './AuthForm';
