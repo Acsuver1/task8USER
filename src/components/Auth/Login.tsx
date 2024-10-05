@@ -1,18 +1,25 @@
+
+
 import React from 'react';
 import { useLoginMutation } from '../../api/authApi';
 import { useNotification } from '../../hooks/useNotification';
 import AuthForm from './AuthForm';
 
+interface LoginFormInputs {
+  email: string;
+  password: string;
+}
+
 const Login: React.FC = () => {
   const [login] = useLoginMutation();
   const notify = useNotification();
 
-  const handleLogin = async (data: any) => {
+  const handleLogin: SubmitHandler<LoginFormInputs> = async (data) => {
     try {
       await login(data).unwrap();
       notify('Login successful!', 'success');
-    } catch (error) {
-      notify('Login failed!', 'error');
+    } catch (error: any) {
+      notify('Login failed! Please check your credentials.', 'error');
     }
   };
 
