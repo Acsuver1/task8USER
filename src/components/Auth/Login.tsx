@@ -16,7 +16,7 @@ const Login: React.FC = () => {
     }
   };
 
-  return <AuthForm onSubmit={handleLogin} />;
+  return <AuthForm onSubmit={handleLogin} title="Login" />;
 };
 
 export default Login;
