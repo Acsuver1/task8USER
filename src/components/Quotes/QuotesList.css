@@ -1,0 +1,40 @@
+/* QuotesList dizayni */
+.quotes-container {
+    max-width: 800px; /* Maksimal kenglik */
+    margin: 20px auto; /* O'rtaga joylash */
+    padding: 20px; /* Ichki bo'sh joy */
+    background-color: #f8f9fa; /* Orqa fon rangi */
+    border-radius: 8px; /* Burchaklarni yumshatish */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soya */
+  }
+  
+  .quotes-title {
+    text-align: center; /* Markazda joylash */
+    color: #343a40; /* Sarlavha rangi */
+    margin-bottom: 20px; /* Pastdagi bo'sh joy */
+  }
+  
+  .quotes-list {
+    list-style-type: none; /* Ro'yxat belgilarini yo'qotish */
+    padding: 0; /* Ichki bo'sh joyni yo'qotish */
+  }
+  
+  .quote-item {
+    background-color: #ffffff; /* Har bir quote uchun orqa fon rangi */
+    border: 1px solid #dee2e6; /* Chegara */
+    border-radius: 5px; /* Burchaklarni yumshatish */
+    padding: 15px; /* Ichki bo'sh joy */
+    margin: 10px 0; /* O'rtadagi bo'sh joy */
+    transition: background-color 0.3s, transform 0.3s; /* O'zgarishlar uchun vaqt */
+  }
+  
+  /* Hover va active effektlari */
+  .quote-item:hover {
+    background-color: #f1f1f1; /* Hover paytida orqa fon rangi */
+    transform: scale(1.02); /* Hover paytida o'lcham oshishi */
+  }
+  
+  .quote-item:active {
+    transform: scale(0.98); /* Bosilganda o'lcham kamayishi */
+  }
+  

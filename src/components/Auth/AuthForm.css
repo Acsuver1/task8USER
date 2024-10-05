@@ -1,0 +1,60 @@
+/* AuthForm dizayni */
+.auth-form {
+    max-width: 400px; /* Maksimal kenglik */
+    margin: 20px auto; /* O'rtaga joylash */
+    padding: 20px; /* Ichki bo'sh joy */
+    background-color: #ffffff; /* Orqa fon rangi */
+    border-radius: 8px; /* Burchaklarni yumshatish */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soya */
+  }
+  
+  .auth-form h2 {
+    text-align: center; /* Sarlavhani markazda joylash */
+    color: #343a40; /* Sarlavha rangi */
+    margin-bottom: 20px; /* Pastdagi bo'sh joy */
+  }
+  
+  .input-group {
+    margin-bottom: 15px; /* Har bir guruh o'rtasidagi bo'sh joy */
+  }
+  
+  .label {
+    display: block; /* Belgini blok qilish */
+    margin-bottom: 5px; /* Pastdagi bo'sh joy */
+  }
+  
+  .auth-input {
+    width: 100%; /* Kenglik */
+    padding: 10px; /* Ichki bo'sh joy */
+    border: 1px solid #ced4da; /* Chegara */
+    border-radius: 5px; /* Burchaklarni yumshatish */
+    transition: border-color 0.3s; /* O'zgarishlar uchun vaqt */
+  }
+  
+  /* Hover va focus effektlari */
+  .auth-input:hover,
+  .auth-input:focus {
+    border-color: #80bdff; /* Hover va focus holatidagi chekara rangi */
+    outline: none; /* Fokussiz bo'lish */
+  }
+  
+  .auth-button {
+    width: 100%; /* Kenglik */
+    padding: 10px; /* Ichki bo'sh joy */
+    background-color: #0d6efd; /* Tugma fon rangi */
+    color: white; /* Tugma matni rangi */
+    border: none; /* Chegarasiz */
+    border-radius: 5px; /* Burchaklarni yumshatish */
+    cursor: pointer; /* Kursor ko'rsatkichini qo'shish */
+    transition: background-color 0.3s, transform 0.3s; /* O'zgarishlar uchun vaqt */
+  }
+  
+  /* Hover va active effektlari */
+  .auth-button:hover {
+    background-color: #0056b3; /* Hover paytida fon rangi */
+  }
+  
+  .auth-button:active {
+    transform: scale(0.95); /* Bosilganda o'lcham kamayishi */
+  }
+  
